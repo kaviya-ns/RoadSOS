@@ -1,0 +1,62 @@
+/* ── Google Fonts ─────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap');
+
+/* ── CSS variables ────────────────────────────────────────── */
+:root {
+  --bg:           #0a0f1e;
+  --surface:      #111827;
+  --surface2:     #1a2236;
+  --border:       #1f2d45;
+  --accent-red:   #ef4444;
+  --accent-amber: #f59e0b;
+  --accent-blue:  #3b82f6;
+  --accent-green: #22c55e;
+  --text:         #f1f5f9;
+  --text-muted:   #64748b;
+  --font-display: 'Syne', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+  --radius:       16px;
+  --radius-sm:    10px;
+}
+
+/* ── Reset ────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*  Scrollbar  */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* Leaflet fix  */
+.leaflet-container { background: #1a2236; }
+
+/* Accessibility mode */
+/* CSS variables are overridden via JS in AccessibilityContext  */
+/* These handle font size and tap target size                   */
+.a11y-mode p,
+.a11y-mode span:not(.leaflet-attribution-flag),
+.a11y-mode label,
+.a11y-mode li {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+}
+.a11y-mode h1 { font-size: 28px !important; line-height: 1.2 !important; }
+.a11y-mode h2 { font-size: 22px !important; line-height: 1.2 !important; }
+.a11y-mode button { font-weight: 700 !important; }
+.a11y-mode a { font-weight: 700 !important; }
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(239,68,68,0.4); }
+  50%       { box-shadow: 0 0 50px rgba(239,68,68,0.7); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
