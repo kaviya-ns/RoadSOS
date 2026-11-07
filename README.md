@@ -1,5 +1,8 @@
 # 🚨 RoadSoS — Emergency Road Safety Assistant
 
+**Automatic crash detection, one-tap SOS and the nearest hospital — in a phone-first web app built for Indian roads.**
+
+![React](https://img.shields.io/badge/React_18-20232A?logo=react&logoColor=61DAFB) ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white) ![PostGIS](https://img.shields.io/badge/PostgreSQL_+_PostGIS-316192?logo=postgresql&logoColor=white) ![Leaflet](https://img.shields.io/badge/Leaflet-199900?logo=leaflet&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?logo=twilio&logoColor=white) ![PWA](https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white)
 
 RoadSoS is a mobile-first Progressive Web App (PWA) that provides instant, location-based access to nearby emergency services during road accidents — and actively monitors for accidents before they happen.
 
