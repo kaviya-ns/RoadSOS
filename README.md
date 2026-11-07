@@ -113,7 +113,6 @@ RoadSoS/
 │   ├── app.py                  # Flask entry point
 │   ├── models.py               # SQLAlchemy models
 │   ├── extensions.py           # DB instance
-│   ├── requirements.txt
 │   ├── seed_osm.py             # OSM facility data fetcher
 │   ├── seed_risk_zones.py      # Risk zone seeder
 │   └── routes/
@@ -151,6 +150,7 @@ RoadSoS/
 │   │   └── sw.js
 │   ├── index.html
 │   └── package.json
+├── requirements.txt            # Backend Python dependencies
 └── README.md
 ```
 
@@ -186,7 +186,7 @@ sudo -u postgres psql -d roadsos -c "CREATE EXTENSION IF NOT EXISTS postgis;"
 cd backend
 python -m venv venv
 source venv/bin/activate
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 ```
 
 Create `backend/.env`:
